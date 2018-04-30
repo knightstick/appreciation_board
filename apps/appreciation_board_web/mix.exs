@@ -42,7 +42,9 @@ defmodule AppreciationBoardWeb.Mixfile do
       {:phoenix_ecto, "~> 3.2"},
       {:gettext, "~> 0.11"},
       {:appreciation_board, in_umbrella: true},
-      {:cowboy, "~> 1.0"}
+      {:cowboy, "~> 1.0"},
+      {:faker, "~> 0.10"},
+      {:absinthe_phoenix, "~> 1.4"}
     ]
   end
 

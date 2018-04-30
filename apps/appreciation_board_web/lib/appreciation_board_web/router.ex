@@ -8,4 +8,6 @@ defmodule AppreciationBoardWeb.Router do
   scope "/api", AppreciationBoardWeb do
     pipe_through :api
   end
+
+  forward "/graphql", Absinthe.Plug, schema: AppreciationBoardWeb.Schema
 end

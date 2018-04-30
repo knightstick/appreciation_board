@@ -1,5 +1,6 @@
 defmodule AppreciationBoardWeb.Endpoint do
   use Phoenix.Endpoint, otp_app: :appreciation_board_web
+  use Absinthe.Phoenix.Endpoint
 
   socket "/socket", AppreciationBoardWeb.UserSocket
 
