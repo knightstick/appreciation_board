@@ -1,5 +1,7 @@
 defmodule AppreciationBoardWeb.UserSocket do
   use Phoenix.Socket
+  use Absinthe.Phoenix.Socket,
+    schema: AppreciationBoardWeb.Schema
 
   ## Channels
   # channel "room:*", AppreciationBoardWeb.RoomChannel

@@ -10,6 +10,7 @@ defmodule AppreciationBoardWeb.Application do
       supervisor(AppreciationBoardWeb.Endpoint, []),
       # Start your own worker by calling: AppreciationBoardWeb.Worker.start_link(arg1, arg2, arg3)
       # worker(AppreciationBoardWeb.Worker, [arg1, arg2, arg3]),
+      supervisor(Absinthe.Subscription, [AppreciationBoardWeb.Endpoint])
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html
